@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>{{{ PRODUCT_NAME }}}</title>
+    <link rel="preload" href="assets/Onest-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="data:,">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+    <script src="js/config.js"></script>
+  </head>
+  <body>
+    <div id="unity-container">
+      <canvas id="unity-canvas" class="unity-canvas"></canvas>
+      <div id="canvas-overlay" class="canvas-overlay">
+        <div class="gradient"></div>
+        <div class="top-gradient"></div>
+        <div class="friends-bottom-gradient"></div>
+
+        <div class="product-version-container">
+          <span id="product-version" class="product-version"></span>
+        </div>
+
+        <img
+          src="assets/logo.svg"
+          alt="Genza Logo"
+          class="splash-logo"
+        />
+        <h2 id="splash_screen_header" class="splash_screen_header hidden"></h2>
+        <div class="splash_screen_commentary_container">
+          <span id="splash_screen_commentary" class="splash_screen_commentary hidden"></span>
+        </div>
+
+        <video class="background-video" autoplay muted loop playsinline>
+          <source src="assets/background_video.mp4" type="video/mp4">
+        </video>
+
+        <div id="roadmap" class="roadmap hidden">
+          <div class="roadmap-item completed">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_1_mvp"></span>
+          </div>
+          <div class="roadmap-item">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_2_getready"></span>
+          </div>
+          <div class="roadmap-item">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_3_dating"></span>
+          </div>
+          <div class="roadmap-item">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_4_p2p"></span>
+          </div>
+          <div class="roadmap-item">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_5_pvp"></span>
+          </div>
+          <div class="roadmap-item">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_6_ios_android"></span>
+          </div>
+          <div class="roadmap-item">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_7_nft"></span>
+          </div>
+        </div>
+
+        <div id="invite" class="invite hidden">
+          <p id="splash_screen_invite" class="invite-main-text"></p>
+          <p id="splash_screen_invite_commentary" class="invite-sub-text"></p>
+
+          <div class="social-links">
+            <div class="social-links">
+              <a href="https://t.me/genza" class="social-item" target="_blank" rel="noopener noreferrer">
+                <img src="assets/telegram_logo.png" class="social-icon" alt="Telegram">
+                <span class="social-label">@genza</span>
+              </a>
+              <a href="https://x.com/genza" class="social-item" target="_blank" rel="noopener noreferrer">
+                <img src="assets/x_logo.png" class="social-icon" alt="X (Twitter)">
+                <span class="social-label">x.com/genza</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress-bar progress-bar-container hidden">
+        <div id="progress-bar-fill" class="progress-bar-fill"></div>
+      </div>
+      <span id="progress-percentage" class="progress-percentage hidden">0%</span>
+      <span id="splash_screen_button_continue" class="splash_screen_button_continue hidden"></span>
+
+      <div id="warning-screen" class="hidden">
+        <h1 class="logo-text">GENZA</h1>
+        <img data-src="assets/qr.png" id="qr-code" class="qr-code" alt="QR Code">
+        <span class="qr-instruction"></span>
+      </div>
+
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

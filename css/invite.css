@@ -1,0 +1,62 @@
+.invite {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 271px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Onest', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  z-index: 10;
+}
+
+.invite-main-text {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.invite-sub-text {
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 500;
+  color: #8BFF90;
+}
+
+.social-links {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.social-item {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: contain;
+  display: grid;
+  place-items: center;
+}
+
+.social-label {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  color: #FFFFFF;
+}
