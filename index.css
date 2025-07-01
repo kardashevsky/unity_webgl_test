@@ -20,10 +20,10 @@ html, body {
   height: 100%;
   overflow: hidden;
   margin: 0;
-  padding-top: env(--tg-safe-area-inset-top);
-  padding-bottom: env(--tg-safe-area-inset-bottom);
-  padding-left: env(--tg-safe-area-inset-left);
-  padding-right: env(--tg-safe-area-inset-right);
+  padding-top: env(--tg-content-safe-area-inset-top);
+  padding-bottom: env(--tg-content-safe-area-inset-bottom);
+  padding-left: env(--tg-content-safe-area-inset-left);
+  padding-right: env(--tg-content-safe-area-inset-right);
   display: flex;
   justify-content: center;
   align-items: center;

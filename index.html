@@ -13,6 +13,9 @@
   </head>
   <body>
     <div id="unity-container">
+      <video class="background-video" autoplay muted loop playsinline>
+        <source src="assets/background_video.mp4" type="video/mp4">
+      </video>
       <canvas id="unity-canvas" class="unity-canvas"></canvas>
       <div id="canvas-overlay" class="canvas-overlay">
         <div class="gradient"></div>
@@ -32,10 +35,6 @@
         <div class="splash_screen_commentary_container">
           <span id="splash_screen_commentary" class="splash_screen_commentary hidden"></span>
         </div>
-
-        <video class="background-video" autoplay muted loop playsinline>
-          <source src="assets/background_video.mp4" type="video/mp4">
-        </video>
 
         <div id="roadmap" class="roadmap hidden">
           <div class="roadmap-item completed">
