@@ -15,15 +15,33 @@ html, body, canvas {
   user-select: none;
 }
 
+.safe-zone {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - var(--tg-safe-area-inset-top) - var(--tg-safe-area-inset-bottom));
+  padding-top: var(--tg-safe-area-inset-top);
+  padding-bottom: var(--tg-safe-area-inset-bottom);
+  padding-left: var(--tg-safe-area-inset-left);
+  padding-right: var(--tg-safe-area-inset-right);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.content-safe-zone {
+  flex: 1;
+  overflow: auto;
+  padding-top: var(--tg-content-safe-area-inset-top);
+  padding-bottom: var(--tg-content-safe-area-inset-bottom);
+  padding-left: var(--tg-content-safe-area-inset-left);
+  padding-right: var(--tg-content-safe-area-inset-right);
+  box-sizing: border-box;
+}
+
 html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
   margin: 0;
-  padding-top: env(--tg-content-safe-area-inset-top);
-  padding-bottom: env(--tg-content-safe-area-inset-bottom);
-  padding-left: env(--tg-content-safe-area-inset-left);
-  padding-right: env(--tg-content-safe-area-inset-right);
   display: flex;
   justify-content: center;
   align-items: center;
