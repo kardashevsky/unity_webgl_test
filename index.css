@@ -18,7 +18,6 @@ html, body, canvas {
 .safe-zone {
   display: flex;
   flex-direction: column;
-  height: calc(100% - var(--tg-safe-area-inset-top) - var(--tg-safe-area-inset-bottom));
   padding-top: var(--tg-safe-area-inset-top);
   box-sizing: border-box;
   overflow: hidden;
