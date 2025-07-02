@@ -1,5 +1,4 @@
 .progress-bar-container {
-  padding-top: var(--tg-safe-area-inset-top);
   width: 100vw;
   min-height: 10px;
   position: absolute;
