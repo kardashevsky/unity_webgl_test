@@ -11,7 +11,6 @@
 }
 
 .progress-bar {
-  padding-top: var(--tg-safe-area-inset-top);
   position: absolute;
   width: 88%;
   height: 10px;

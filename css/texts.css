@@ -30,6 +30,7 @@
 }
 
 .splash_screen_header {
+  padding-top: var(--tg-safe-area-inset-top);
   position: absolute;
   top: 20%;
 
@@ -205,6 +206,7 @@
   }
 
   .splash_screen_header {
+    padding-top: var(--tg-safe-area-inset-top);
     position: absolute;
     top: 18%;
 
