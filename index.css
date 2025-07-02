@@ -27,16 +27,6 @@ html, body, canvas {
   overflow: hidden;
 }
 
-.content-safe-zone {
-  flex: 1;
-  overflow: auto;
-  padding-top: var(--tg-content-safe-area-inset-top);
-  padding-bottom: var(--tg-content-safe-area-inset-bottom);
-  padding-left: var(--tg-content-safe-area-inset-left);
-  padding-right: var(--tg-content-safe-area-inset-right);
-  box-sizing: border-box;
-}
-
 html, body {
   width: 100%;
   height: 100%;
