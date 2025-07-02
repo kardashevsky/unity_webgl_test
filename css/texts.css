@@ -6,6 +6,7 @@
   top: 5%;
   width: 100%;
   height: auto;
+  padding-top: var(--tg-safe-area-inset-top);
   z-index: 100;
 }
 
@@ -19,6 +20,7 @@
 }
 
 .splash-logo {
+  padding-top: var(--tg-safe-area-inset-top);
   position: absolute;
   width: 100%;
   height: 210px;
@@ -123,6 +125,7 @@
 }
 
 .splash_screen_commentary_container {
+  padding-top: var(--tg-safe-area-inset-top);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,6 +193,7 @@
 
 @media screen and (min-width: 430px) {
   .splash-logo {
+    padding-top: var(--tg-safe-area-inset-top);
     position: absolute;
     width: 100%;
     height: 210px;
@@ -297,6 +301,7 @@
   }
 
   .splash_screen_commentary_container {
+    padding-top: var(--tg-safe-area-inset-top);
     display: flex;
     justify-content: center;
     align-items: center;

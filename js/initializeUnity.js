@@ -13,7 +13,7 @@ const config = {
   streamingAssetsUrl: "StreamingAssets",
   companyName: "NeuraGames",
   productName: "Avatar",
-  productVersion: "5.0",
+  productVersion: "6.0",
 };
 
 const container = document.querySelector("#unity-container");

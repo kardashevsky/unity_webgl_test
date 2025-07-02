@@ -17,86 +17,83 @@
       <source src="assets/background_video.mp4" type="video/mp4" />
     </video>
 
-    <!-- Safe зона Telegram -->
-    <div class="safe-zone">
-      <div id="unity-container">
-        <canvas id="unity-canvas" class="unity-canvas"></canvas>
+    <div id="unity-container">
+      <canvas id="unity-canvas" class="unity-canvas"></canvas>
 
-        <div id="canvas-overlay" class="canvas-overlay">
-          <div class="gradient"></div>
-          <div class="top-gradient"></div>
-          <div class="friends-bottom-gradient"></div>
+      <div id="canvas-overlay" class="canvas-overlay">
+        <div class="gradient"></div>
+        <div class="top-gradient"></div>
+        <div class="friends-bottom-gradient"></div>
 
-          <div class="product-version-container">
-            <span id="product-version" class="product-version"></span>
+        <div class="product-version-container">
+          <span id="product-version" class="product-version"></span>
+        </div>
+
+        <img src="assets/logo.svg" alt="Genza Logo" class="splash-logo" />
+        <h2 id="splash_screen_header" class="splash_screen_header hidden"></h2>
+
+        <div class="splash_screen_commentary_container">
+          <span id="splash_screen_commentary" class="splash_screen_commentary hidden"></span>
+        </div>
+
+        <div id="roadmap" class="roadmap hidden">
+          <div class="roadmap-item completed">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_1_mvp"></span>
           </div>
-
-          <img src="assets/logo.svg" alt="Genza Logo" class="splash-logo" />
-          <h2 id="splash_screen_header" class="splash_screen_header hidden"></h2>
-
-          <div class="splash_screen_commentary_container">
-            <span id="splash_screen_commentary" class="splash_screen_commentary hidden"></span>
+          <div class="roadmap-item">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_2_getready"></span>
           </div>
-
-          <div id="roadmap" class="roadmap hidden">
-            <div class="roadmap-item completed">
-              <div class="checkpoint-icon"></div>
-              <span id="splash_screen_1_mvp"></span>
-            </div>
-            <div class="roadmap-item">
-              <div class="checkpoint-icon"></div>
-              <span id="splash_screen_2_getready"></span>
-            </div>
-            <div class="roadmap-item">
-              <div class="checkpoint-icon"></div>
-              <span id="splash_screen_3_dating"></span>
-            </div>
-            <div class="roadmap-item">
-              <div class="checkpoint-icon"></div>
-              <span id="splash_screen_4_p2p"></span>
-            </div>
-            <div class="roadmap-item">
-              <div class="checkpoint-icon"></div>
-              <span id="splash_screen_5_pvp"></span>
-            </div>
-            <div class="roadmap-item">
-              <div class="checkpoint-icon"></div>
-              <span id="splash_screen_6_ios_android"></span>
-            </div>
-            <div class="roadmap-item">
-              <div class="checkpoint-icon"></div>
-              <span id="splash_screen_7_nft"></span>
-            </div>
+          <div class="roadmap-item">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_3_dating"></span>
           </div>
-
-          <div id="invite" class="invite hidden">
-            <p id="splash_screen_invite" class="invite-main-text"></p>
-            <p id="splash_screen_invite_commentary" class="invite-sub-text"></p>
-
-            <div class="social-links">
-              <a href="https://t.me/genza" class="social-item" target="_blank" rel="noopener noreferrer">
-                <img src="assets/telegram_logo.png" class="social-icon" alt="Telegram" />
-                <span class="social-label">@genza</span>
-              </a>
-              <a href="https://x.com/genza" class="social-item" target="_blank" rel="noopener noreferrer">
-                <img src="assets/x_logo.png" class="social-icon" alt="X (Twitter)" />
-                <span class="social-label">x.com/genza</span>
-              </a>
-            </div>
+          <div class="roadmap-item">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_4_p2p"></span>
+          </div>
+          <div class="roadmap-item">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_5_pvp"></span>
+          </div>
+          <div class="roadmap-item">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_6_ios_android"></span>
+          </div>
+          <div class="roadmap-item">
+            <div class="checkpoint-icon"></div>
+            <span id="splash_screen_7_nft"></span>
           </div>
         </div>
 
-        <div class="progress-bar progress-bar-container hidden">
-          <div id="progress-bar-fill" class="progress-bar-fill"></div>
-        </div>
-        <span id="progress-percentage" class="progress-percentage hidden">0%</span>
-        <span id="splash_screen_button_continue" class="splash_screen_button_continue hidden"></span>
+        <div id="invite" class="invite hidden">
+          <p id="splash_screen_invite" class="invite-main-text"></p>
+          <p id="splash_screen_invite_commentary" class="invite-sub-text"></p>
 
-        <div id="warning-screen" class="hidden">
-          <h1 class="logo-text">GENZA</h1>
-          <img data-src="assets/qr.png" id="qr-code" class="qr-code" alt="QR Code" />
-          <span class="qr-instruction"></span>
+          <div class="social-links">
+            <a href="https://t.me/genza" class="social-item" target="_blank" rel="noopener noreferrer">
+              <img src="assets/telegram_logo.png" class="social-icon" alt="Telegram" />
+              <span class="social-label">@genza</span>
+            </a>
+            <a href="https://x.com/genza" class="social-item" target="_blank" rel="noopener noreferrer">
+              <img src="assets/x_logo.png" class="social-icon" alt="X (Twitter)" />
+              <span class="social-label">x.com/genza</span>
+            </a>
+          </div>
         </div>
+      </div>
+
+      <div class="progress-bar progress-bar-container hidden">
+        <div id="progress-bar-fill" class="progress-bar-fill"></div>
+      </div>
+      <span id="progress-percentage" class="progress-percentage hidden">0%</span>
+      <span id="splash_screen_button_continue" class="splash_screen_button_continue hidden"></span>
+
+      <div id="warning-screen" class="hidden">
+        <h1 class="logo-text">GENZA</h1>
+        <img data-src="assets/qr.png" id="qr-code" class="qr-code" alt="QR Code" />
+        <span class="qr-instruction"></span>
       </div>
     </div>
 

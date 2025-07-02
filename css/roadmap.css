@@ -1,4 +1,5 @@
 #roadmap {
+  padding-top: var(--tg-safe-area-inset-top);
   position: absolute;
   top: 30%;
 

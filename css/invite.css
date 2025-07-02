@@ -1,4 +1,5 @@
 .invite {
+  padding-top: var(--tg-safe-area-inset-top);
   position: absolute;
   top: 65%;
   left: 50%;
