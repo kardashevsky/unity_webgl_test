@@ -12,6 +12,21 @@ import initializeSplashScreen from './js/initializeSplashScreen.js';
 import initializeUnity from './js/initializeUnity.js';
 import { getPlayerData } from './js/api.js';
 
+function getTelegramSafeAreaInsets() {
+  const styles = getComputedStyle(document.documentElement);
+
+  return {
+    "--tg-safe-area-inset-top": styles.getPropertyValue("--tg-safe-area-inset-top").trim(),
+    "--tg-safe-area-inset-bottom": styles.getPropertyValue("--tg-safe-area-inset-bottom").trim(),
+    "--tg-safe-area-inset-left": styles.getPropertyValue("--tg-safe-area-inset-left").trim(),
+    "--tg-safe-area-inset-right": styles.getPropertyValue("--tg-safe-area-inset-right").trim(),
+    "--tg-content-safe-area-inset-top": styles.getPropertyValue("--tg-content-safe-area-inset-top").trim(),
+    "--tg-content-safe-area-inset-bottom": styles.getPropertyValue("--tg-content-safe-area-inset-bottom").trim(),
+    "--tg-content-safe-area-inset-left": styles.getPropertyValue("--tg-content-safe-area-inset-left").trim(),
+    "--tg-content-safe-area-inset-right": styles.getPropertyValue("--tg-content-safe-area-inset-right").trim(),
+  };
+}
+
 (async () => {
   const webApp = window.Telegram.WebApp;
 
@@ -43,6 +58,9 @@ import { getPlayerData } from './js/api.js';
   await initializeSplashScreen(language, isMobile, isPlayerBlocked);
 
   webApp.ready();
+
+  const insets = getTelegramSafeAreaInsets();
+  console.log(insets); // или передай куда нужно
 
   if (isMobile && !isPlayerBlocked) {
     try {
